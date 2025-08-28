@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_email"
+            android:background="@drawable/circle_background"
+            android:scaleType="center"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView
+                    android:id="@+id/Notify_tieuDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Alo Alo tiêu đề ghi ở đây"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/Notify_thoiGian"
+                    android:layout_span="3"
+                    android:padding="5dp"
+                    android:text="13:40 05/02/2025"
+                    android:textColor="#FF0000" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/Notify_noiDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="2dp"
+                    android:padding="5dp"
+                    android:singleLine="false"
+                    android:text="Chỉ còn 4h nữa chuyến xe Tây sơn - nga tu ga của bạn sẽ khởi hành" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

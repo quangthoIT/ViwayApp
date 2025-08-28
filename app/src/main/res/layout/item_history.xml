@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    tools:layout_editor_absoluteX="1dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Mã vé/Code:" />
+                <TextView
+                    android:id="@+id/TicketHistory_maVe"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="ABC123"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/TicketHistory_hoTro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@android:color/white"
+                android:src="@drawable/ic_muti"
+                android:tint="#808080" />
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Trạng thái: " />
+
+                <TextView
+                    android:id="@+id/TicketHistory_trangThai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"
+                    android:text="ABC123"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="#CCCCCC" />
+        <TableRow>
+            <TextView
+                android:layout_span="3"
+                android:padding="10dp"
+                android:textColor="#FF0000"
+                android:text="Thông tin chuyến đi" />
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/TicketHistory_DiemDi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="8dp"
+
+                    android:drawableStart="@drawable/ic_diemdi"
+                    android:drawableTint="#000000"
+                    android:text="TP.Hồ Chí Minh" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_huongdi"
+                    android:drawableTint="#808080" />
+
+                <TextView
+                    android:id="@+id/TicketHistory_DiemDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="8dp"
+
+                    android:drawableStart="@drawable/ic_diemden"
+                    android:drawableTint="#FF0000"
+                    android:padding="10dp"
+                    android:text="Bình Định"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:drawableTint="#808080"
+                    android:text="Số ghế: " />
+                <TextView
+                    android:id="@+id/TicketHistory_viTriGhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="B06"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:drawableTint="#808080"
+                    android:text="Giờ xuất bến: " />
+                <TextView
+                    android:id="@+id/TicketHistory_gioXuatBen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="1234567890"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

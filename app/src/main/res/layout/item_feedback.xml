@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp"
+    android:layout_margin="10dp"
+    tools:layout_editor_absoluteX="1dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:id="@+id/feedback_tieuDe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Hỗ trợ và đánh giá: Nguyễn Huy Toàn - 0969069605 " />
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Trạng thái: " />
+
+                <TextView
+                    android:id="@+id/feedback_trangThai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#FF0000"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="ABC123"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:drawableTint="#808080"
+                    android:text="Mã yêu cầu: " />
+                <TextView
+                    android:id="@+id/feedback_maYeuCau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="B06"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/feedback_thoiGian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="1234567890"
+                android:textSize="15sp"
+                android:textColor="#808080"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

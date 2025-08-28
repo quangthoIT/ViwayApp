@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardElevation="1dp"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    tools:layout_editor_absoluteX="1dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:stretchColumns="*"
+        android:layout_height="match_parent">
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_notifitation"
+                    android:background="@drawable/rounded_conrner_background"
+                    android:scaleType="center"/>
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F2F2F2"
+                    android:textStyle="bold"
+                    android:text="Tuyến có trung chuyển"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ticket_gioDi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="19:35" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_lineright"
+                    android:drawableTint="#808080" />
+
+                <TextView
+                    android:id="@+id/ticket_gioDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="09:35" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:tint="#808080"
+                    android:src="@drawable/ic_waterbottle"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:tint="#808080"
+                    android:src="@drawable/ic_display"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:tint="#808080"
+                    android:src="@drawable/ic_wifi"/>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/spinner_background"
+                android:layout_marginHorizontal="8dp">
+
+                <TextView
+                    android:id="@+id/ticket_giaVe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#F44336"
+                    android:textSize="16sp"
+                    android:text="360,000đ" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="#808080"
+                    android:src="@drawable/ic_circle"/>
+
+                <TextView
+                    android:id="@+id/ticket_loaiGhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Limousine" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="#808080"
+                    android:src="@drawable/ic_circle"/>
+
+                <TextView
+                    android:id="@+id/ticket_soLuongGhe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Còn 27 chỗ" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ticket_diemDi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_diemdi"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#000000"
+                    android:text="TP.Hồ Chí Minh" />
+
+                <TextView
+                    android:id="@+id/ticket_khoangCach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:drawableStart="@drawable/ic_linedown"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#808080"
+                    android:text="Khoảng cách: 705km -14h"
+                    android:drawableTint="#808080" />
+
+                <TextView
+                    android:id="@+id/ticket_diemDen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_diemden"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#FF0000"
+                    android:paddingStart="10dp"
+                    android:text="Bình Định"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ticket_tvLichTrinh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6699FF"
+                    android:gravity="center_vertical"
+                    android:drawableStart="@drawable/ic_info"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="#6699FF"
+                    android:padding="10dp"
+                    android:text="Lịch trình"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.cardview.widget.CardView>

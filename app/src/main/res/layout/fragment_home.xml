@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@android:color/white"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="*">
+
+                        <TableRow>
+                            <TextView
+                                android:background="#FFFFFF"
+                                android:padding="10dp"
+                                android:text="Điểm đi"
+                                android:textColor="#808080" />
+                            <TextView
+                                android:layout_width="37dp"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF"
+                                android:padding="10dp" />
+                            <TextView
+                                android:background="#FFFFFF"
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Điểm đến"
+                                android:textColor="#808080" />
+                        </TableRow>
+
+                        <TableRow>
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerDiemDi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:spinnerMode="dropdown"
+                                android:background="@null" />
+                            <ImageButton
+                                android:id="@+id/btnDoi"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF"
+                                android:contentDescription="Đổi điểm đi và điểm đến"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_swap"
+                                android:tint="#FF0000" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/spinnerDiemDen"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:spinnerMode="dropdown"
+                                android:background="@null" />
+
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:padding="10dp"
+                                android:text="Tỉnh/Thành phố"
+                                android:textColor="#808080" />
+                            <TextView android:padding="10dp" />
+                            <TextView
+                                android:gravity="right"
+                                android:padding="10dp"
+                                android:text="Tỉnh/Thành phố"
+                                android:textColor="#808080" />
+                        </TableRow>
+
+                        <TableRow>
+                            <CheckBox
+                                android:id="@+id/checkbox_khuHoi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Khứ hồi"
+                                android:textColor="#808080"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="#CCCCCC" />
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="177dp"
+                        android:stretchColumns="*">
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Ngày đi"
+                                android:textColor="#808080" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:text="Ngày về"
+                                android:textColor="#808080" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Số vé"
+                                android:gravity="center"
+                                android:textColor="#808080" />
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/ngayDi"
+                                android:padding="10dp"
+                                android:text="18/05"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/ngayVe"
+                                android:padding="10dp"
+                                android:text="19/05"
+                                android:gravity="center"
+                                android:textSize="16sp"
+                                android:layout_weight="1"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/soLuongVe"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:layout_weight="1"
+                                android:spinnerMode="dropdown"
+                                android:background="@null" />
+
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/thuDi"
+                                android:padding="10dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Chủ nhật"
+                                android:textColor="#808080" />
+                            <TextView
+                                android:id="@+id/thuVe"
+                                android:padding="10dp"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Thứ hai"
+                                android:textColor="#808080" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+                        </TableRow>
+                        <Button
+                            android:id="@+id/btnTimVe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF5722"
+                            android:padding="12dp"
+                            android:text="Tìm tuyến xe"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </TableLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

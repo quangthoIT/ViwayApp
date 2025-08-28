@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:background="@drawable/white_rounded_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF0000"
+        android:background="@drawable/ic_warning"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:text="Yêu cầu xóa tải khoản"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#757575"
+        android:text="Sau khi xóa tài khoản, quý khách sẽ mất hoàn toàn quyền truy cập ứng dụng VIWAY, Quý khách có chắc chắn muốn xóa tài khoản không?"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Delete_btnYes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="15dp"
+            android:backgroundTint="#DDDDDD"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Chắc chắn xóa"/>
+
+        <Button
+            android:id="@+id/Delete_btnNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:backgroundTint="#FF0000"
+            android:textSize="20sp"
+            android:text="Hủy"/>
+    </LinearLayout>
+
+
+</LinearLayout>
